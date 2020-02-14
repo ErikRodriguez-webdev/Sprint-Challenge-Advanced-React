@@ -1,5 +1,7 @@
 import React from "react";
 import CardDisplay from "./CardDisplay";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import axios from "axios";
 import "./App.css";
 
@@ -23,6 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Nav />
         <div className="allCardContainer">
           {this.state.soccerData.map((each) => (
             <CardDisplay
@@ -32,6 +35,7 @@ class App extends React.Component {
             />
           ))}
         </div>
+        <Footer />
       </div>
     );
   }

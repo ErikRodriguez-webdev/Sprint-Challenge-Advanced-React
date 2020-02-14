@@ -1,20 +1,32 @@
-nav {
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 3px solid blue;
+  margin-bottom: 2%;
+}
+
+footer {
+  text-align: center;
 }
 
 .allCardContainer {
-  border: 1px solid red;
   width: 95%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
 .aCard {
-  border: 1px solid blue;
-  width: 45%;
+  width: 25%;
   text-align: center;
   margin: 2%;
+  border: 5px solid lightgray;
+  background: grey;
+}
+
+.darkMode {
+  color: white;
+  background: black;
 }
